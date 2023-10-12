@@ -1,9 +1,17 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.C.image=seal.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+=======
+class.\u9AD8\u4ED9\u592A\u90CE.image=person.png
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=884
+editor.fx.0.y=112
+>>>>>>> 7d9e7d0555306a7e79b1e50c951d96df4f8ddd0c
 height=585
 package.numDependencies=0
 package.numTargets=2
@@ -22,7 +30,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=C
+=======
+target1.name=\u9AD8\u4ED9\u592A\u90CE
+>>>>>>> 7d9e7d0555306a7e79b1e50c951d96df4f8ddd0c
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
@@ -38,5 +50,10 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=934
 yPosition=323
+=======
+xPosition=130
+yPosition=65
+>>>>>>> 7d9e7d0555306a7e79b1e50c951d96df4f8ddd0c
