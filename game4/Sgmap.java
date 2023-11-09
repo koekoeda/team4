@@ -6,16 +6,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Sgmap extends World
+public class Sgmap extends Actor
 {
-
-    /**
-     * Constructor for objects of class Sgmap.
-     * 
+    
+   /**
+     * Act - do whatever the Sgmap wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Sgmap()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(446,401, 1); 
-    }
+    public void act() 
+    {
+        // Add your action code here.
+        getImage().scale(700,600);
+    }    
 }
