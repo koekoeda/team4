@@ -13,11 +13,12 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    private GreenfootImage Sgmap = null;
     public MyWorld()
     {
-        super(1000,667,1);
-        GreenfootImage Sgmap = new GreenfootImage( "images/Sgmap.png" );
-        getBackground().drawImage( Sgmap, 100, 100 );
-        Sgmap.scale( 400, 700 );
+        super(1000,655,1);
+        Sgmap = new GreenfootImage( "images/Sgmap.png" );
+        Sgmap.scale(800, 500);
+        getBackground().drawImage( Sgmap, 100, 50 );
     }
 }
