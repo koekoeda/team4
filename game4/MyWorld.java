@@ -8,14 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
     public MyWorld()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+    {
+        super(1000,667,1);
+        GreenfootImage Sgmap = new GreenfootImage( "images/Sgmap.png" );
+        getBackground().drawImage( Sgmap, 100, 100 );
+        Sgmap.scale( 400, 700 );
     }
 }
