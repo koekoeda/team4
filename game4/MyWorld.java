@@ -22,20 +22,18 @@ public class MyWorld extends World
         Sgmap = new GreenfootImage( "images/Sgmap.png" );
         Sgmap.scale(800, 500);
         getBackground().drawImage( Sgmap, 100, 50 );
+        /* 好感度のパラメータ表示Sample */
+        showText("koukando",60,20);
         MeterBox = new GreenfootImage( "images/好感度メータ.png" );
-        MeterBox.scale( 200, 40 );
-        Meter = new GreenfootImage( "images/好感度.png" );
-        Meter.scale( 22, 40 );
+        MeterBox.scale( 200, 30 );
         getBackground().drawImage( MeterBox, 50, 50 );
-        getBackground().drawImage( Meter, 50, 50 );//好感度1
-        getBackground().drawImage( Meter, 70, 50 );//好感度2
-        getBackground().drawImage( Meter, 90, 50 );//好感度3
-        getBackground().drawImage( Meter, 110, 50 );//好感度4
-        getBackground().drawImage( Meter, 130, 50 );//好感度5
-        getBackground().drawImage( Meter, 150, 50 );//好感度6
-        getBackground().drawImage( Meter, 170, 50 );//好感度7
-        getBackground().drawImage( Meter, 190, 50 );//好感度8
-        getBackground().drawImage( Meter, 210, 50 );//好感度9
-        getBackground().drawImage( Meter, 230, 50 );//好感度10
+        Meter = new GreenfootImage( "images/好感度.png" );
+        Meter.scale( 22, 30 );
+        int koukando=4;//koukando level
+        int level = 50;
+        for(int i=0; i < koukando; i++){
+            getBackground().drawImage( Meter, level, 50 );
+            level += 20;
+        }
     }
 }
