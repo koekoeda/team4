@@ -14,6 +14,8 @@ public class MyWorld extends World
      * 
      */
     private GreenfootImage Sgmap = null;
+    private GreenfootImage Meter = null;
+    private GreenfootImage MeterBox = null;
     public MyWorld()
     {
         super(1000,655,1);
@@ -26,5 +28,19 @@ public class MyWorld extends World
         addObject(new kaguya3(),180,500);
         addObject(new kaguya2(),195,500);
         addObject(new kaguya1(),210,500);
+        
+        /* 好感度のパラメータ表示Sample */
+        showText("koukando",60,20);
+        MeterBox = new GreenfootImage( "images/好感度メータ.png" );
+        MeterBox.scale( 200, 30 );
+        getBackground().drawImage( MeterBox, 50, 50 );
+        Meter = new GreenfootImage( "images/好感度.png" );
+        Meter.scale( 22, 30 );
+        int koukando=4;//koukando level
+        int level = 50;
+        for(int i=0; i < koukando; i++){
+            getBackground().drawImage( Meter, level, 50 );
+            level += 20;
+        }
     }
 }
