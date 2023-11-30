@@ -1,5 +1,4 @@
 #Greenfoot project file
-class.C.image=seal.png
 class.MyWorld.image=take.png
 class.kaguya1.image=1.png
 class.kaguya2.image=2.png
@@ -24,8 +23,8 @@ dependency5.to=kaguya1
 dependency5.type=UsesDependency
 editor.fx.0.height=737
 editor.fx.0.width=816
-editor.fx.0.x=428
-editor.fx.0.y=158
+editor.fx.0.x=592
+editor.fx.0.y=181
 height=845
 package.numDependencies=5
 package.numTargets=10
@@ -116,5 +115,5 @@ target9.y=0
 version=3.0.0
 width=1245
 world.lastInstantiated=MyWorld
-xPosition=284
-yPosition=64
+xPosition=472
+yPosition=207
