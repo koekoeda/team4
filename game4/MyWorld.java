@@ -1,23 +1,24 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class MyWorld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MyWorld extends World
 {
+    private GreenfootImage Sgmap = null;
     
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
     public MyWorld()
     {
-        super(1000,667,1);
-        GreenfootImage Sgmap = new GreenfootImage( "images/Sgmap.png" );
-        getBackground().drawImage( Sgmap, 100, 100 );
-        Sgmap.scale( 400, 700 );
+        super(1000,655,1);
+        Sgmap = new GreenfootImage( "images/Sgmap.png" );
+        Sgmap.scale(800, 500);
+        getBackground().drawImage( Sgmap, 100, 50 );
+        
+        String input = Greenfoot.ask("プレイヤー人数を入力してください。");
+        int players=Integer.parseInt(input);
+        
+        showText(input, 400, 200);
+        
     }
+    //public static  void  start (JSample1_1)
 }
+
+
+
