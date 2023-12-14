@@ -62,38 +62,35 @@ public class MyWorld extends World
             /*****サイコロ*****/
             boolean koro = true;
             while(koro){
-                img1 = new GreenfootImage("dice-01.png");
+                img1 = new GreenfootImage("images/dice-01.png");
                 img1.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img2 = new GreenfootImage("dice-02.png");
+                img2 = new GreenfootImage("images/dice-02.png");
                 img2.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img3 = new GreenfootImage("dice-03.png");
+                img3 = new GreenfootImage("images/dice-03.png");
                 img3.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img4 = new GreenfootImage("dice-04.png");
+                img4 = new GreenfootImage("images/dice-04.png");
                 img4.scale( 140, 138 );
                 Greenfoot.delay(1);
+                showText("Enterを押してください",200,200);
                 if(Greenfoot.isKeyDown("enter")){
                     Random rand = new Random();
                     int ran = rand.nextInt(4) + 1;
                     if(ran == 1){
-                        img1 = new GreenfootImage("dice-01.png");
                         img1.scale( 140, 138 );
                         showText("サイコロの目は1です",200,200);
                         koro = false;
                     }else if(ran == 2){
-                        img2 = new GreenfootImage("dice-02.png");
                         img2.scale( 140, 138 );
                         showText("サイコロの目は2です",200,200);
                         koro = false;
                     }else if(ran == 3){
-                        img3 = new GreenfootImage("dice-03.png");
                         img3.scale( 140, 138 );
                         showText("サイコロの目は3です",200,200);
                         koro = false;
                     }else if(ran == 4){
-                        img4 = new GreenfootImage("dice-04.png");
                         img4.scale( 140, 138 );
                         showText("サイコロの目は4です",200,200);
                         koro = false;
