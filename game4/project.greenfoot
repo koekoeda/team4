@@ -23,11 +23,19 @@ dependency5.to=kaguya1
 dependency5.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=713
 editor.fx.0.y=163
 height=834
 package.numDependencies=5
 package.numTargets=11
+=======
+editor.fx.0.x=1009
+editor.fx.0.y=169
+height=845
+package.numDependencies=5
+package.numTargets=6
+>>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -78,26 +86,39 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=kaguya3
+=======
+target4.name=kaguya5
+>>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=kaguya2
+=======
+target5.name=kaguya4
+>>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
+<<<<<<< HEAD
 target6.name=kaguya1
+=======
+target6.name=MyWorld
+>>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
+<<<<<<< HEAD
 target7.height=50
 target7.name=DIce
 target7.showInterface=false
@@ -124,3 +145,10 @@ width=1245
 world.lastInstantiated=MyWorld
 xPosition=524
 yPosition=96
+=======
+version=3.0.0
+width=1245
+world.lastInstantiated=MyWorld
+xPosition=467
+yPosition=116
+>>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
