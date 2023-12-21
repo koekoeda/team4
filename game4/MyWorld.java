@@ -12,22 +12,28 @@ public class MyWorld extends World
     public GreenfootImage img4 = null;
     static int status=0;
 
-    public void input(String inp){
-        switch(inp){
+    public void input(){
+        boolean seigyo=true;
+        while(seigyo){
+        String inp = Greenfoot.ask("プレイヤー人数を入力してください。\n2~5人を選択してください。");
+         switch(inp){
             case "2":
             addObject(new kaguya5(),150,500);
             addObject(new kaguya4(),165,500);
+            seigyo=false;
             break;
             case "3":
             addObject(new kaguya5(),150,500);
             addObject(new kaguya4(),165,500);
             addObject(new kaguya3(),180,500);
+            seigyo=false;
             break;
             case "4":
             addObject(new kaguya5(),150,500);
             addObject(new kaguya4(),165,500);
             addObject(new kaguya3(),180,500);
             addObject(new kaguya2(),195,500);
+            seigyo=false;
             break;
             case "5":
             addObject(new kaguya5(),150,500);
@@ -35,10 +41,9 @@ public class MyWorld extends World
             addObject(new kaguya3(),180,500);
             addObject(new kaguya2(),195,500);
             addObject(new kaguya1(),210,500);
+            seigyo=false;
             break;
-            default:
-            inp = Greenfoot.ask("プレイヤー人数を入力してください。\n2~5人を選択してください。");
-            break;
+          }
         }
     }
 
@@ -49,7 +54,7 @@ public class MyWorld extends World
         Sgmap.scale(800, 500);
         getBackground().drawImage( Sgmap, 100, 50 );
 
-<<<<<<< HEAD
+
         
         String input;
         
@@ -69,8 +74,7 @@ public class MyWorld extends World
         }
 
 
-=======
->>>>>>> c3cce620d70a6f62e3364a49157a7506b53de926
+
     }
 
     public void act()
@@ -78,44 +82,42 @@ public class MyWorld extends World
         if(status==0 || Greenfoot.isKeyDown("space")){
             status = 1;
             int end = 1;
-            String inp = Greenfoot.ask("プレイヤー人数を入力してください。\n2~5人を選択してください。");
-            input(inp);
-
+            
+            
+            input();
+            
             /*****サイコロ*****/
             boolean koro = true;
             while(koro){
-                img1 = new GreenfootImage("dice-01.png");
+                img1 = new GreenfootImage("images/dice-01.png");
                 img1.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img2 = new GreenfootImage("dice-02.png");
+                img2 = new GreenfootImage("images/dice-02.png");
                 img2.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img3 = new GreenfootImage("dice-03.png");
+                img3 = new GreenfootImage("images/dice-03.png");
                 img3.scale( 140, 138 );
                 Greenfoot.delay(1);
-                img4 = new GreenfootImage("dice-04.png");
+                img4 = new GreenfootImage("images/dice-04.png");
                 img4.scale( 140, 138 );
                 Greenfoot.delay(1);
+                showText("Enterを押してください",200,200);
                 if(Greenfoot.isKeyDown("enter")){
                     Random rand = new Random();
                     int ran = rand.nextInt(4) + 1;
                     if(ran == 1){
-                        img1 = new GreenfootImage("dice-01.png");
                         img1.scale( 140, 138 );
                         showText("サイコロの目は1です",200,200);
                         koro = false;
                     }else if(ran == 2){
-                        img2 = new GreenfootImage("dice-02.png");
                         img2.scale( 140, 138 );
                         showText("サイコロの目は2です",200,200);
                         koro = false;
                     }else if(ran == 3){
-                        img3 = new GreenfootImage("dice-03.png");
                         img3.scale( 140, 138 );
                         showText("サイコロの目は3です",200,200);
                         koro = false;
                     }else if(ran == 4){
-                        img4 = new GreenfootImage("dice-04.png");
                         img4.scale( 140, 138 );
                         showText("サイコロの目は4です",200,200);
                         koro = false;
