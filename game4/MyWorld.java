@@ -16,14 +16,9 @@ public class MyWorld extends World
     static int jun_max = 0; //順番の最大値
     static int i = 0; // 順番に使う
     static int[] poi = {0,0,0,0,0};
-    static int[] kaguya1 = {jun[0],K_x[0],K_y[0],poi[0]};
-    static int[] kaguya2 = {jun[1],K_x[1],K_y[1],poi[1]};
-    static int[] kaguya3 = {jun[2],K_x[2],K_y[2],poi[2]};
-    static int[] kaguya4 = {jun[3],K_x[3],K_y[3],poi[3]};
-    static int[] kaguya5 = {jun[4],K_x[4],K_y[4],poi[4]};
     
     public int sai = 0; //サイコロの合計値
-
+    
     public void input(String inp){
         switch(inp){
             case "2":
@@ -60,6 +55,7 @@ public class MyWorld extends World
 
     public void Saikoro(int poi){
         /*****サイコロ*****/
+        
         boolean koro = true;
         while(koro){
             img1 = new GreenfootImage("images/dice-01.png");
@@ -79,7 +75,7 @@ public class MyWorld extends World
                 Random rand = new Random();
                 int ran = rand.nextInt(4) + 1;
                 poi += ran;
-                point(poi);
+                point(poi);//ここ
                 if(ran == 1){
                     img1.scale( 140, 138 );
                     showText("サイコロの目は1です",200,200);
@@ -103,7 +99,7 @@ public class MyWorld extends World
             }
         }
     }
-
+    
     public void point(int sai){
         int[] migi = {1,3,5,7};
         int[] hida = {0,2,4,6};
