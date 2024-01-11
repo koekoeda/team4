@@ -239,6 +239,7 @@ public class MyWorld extends World{
                             count++;
                             showText(""+count,500,500 );
                             if(count == jun_max){
+                                Greenfoot.stop();
                                 status = 0;
                             }
                         }
