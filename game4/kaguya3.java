@@ -14,6 +14,9 @@ public class kaguya3 extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        World world = getWorld();
+        if( Greenfoot.isKeyDown("space")){
+            getWorld().removeObject( this );
+        }
     }    
 }
