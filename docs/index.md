@@ -8,7 +8,7 @@
   
   果たして、少女はハッピーエンドを迎えられるだろうか。 
   ![sugoroku](https://github.com/koekoeda/team4/assets/130423684/52b28544-0d7e-478c-8ac5-a16b1188f173)
-  ※絵はAI君が描いてくれました
+  ※Image createrで作りました
 
 - **ゲーム仕様**
 
